@@ -43,7 +43,7 @@ func validateCourse(course string) (string, error) {
 		return "", err
 	}
 	if !strings.HasSuffix(course, "COURSE") {
-		c = c + "COURSE"
+		c = c + " COURSE"
 	}
 	return strings.ToTitle(c), nil
 }
